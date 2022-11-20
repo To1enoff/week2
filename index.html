@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      label{
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Registration</a>
+      <a href="/page2.html">Log in</a>
+    </nav>
+    <main>
+      <form>
+        <fieldset>
+          <legend>User info</legend>
+          <label for="name"><input type="text" id="name" name="name" placeholder="user name"></label>
+          <label for="surname"><input type="text" id="surname" name="surname" placeholder="user surname"></label>
+          <label for="num"><input type="tel" id="num" name="num" placeholder="phone number"></label>
+          <label for="email"><input type="email" id="email" name="email" placeholder="email"></label>
+          <label for="password"><input type="password" id="password" name="password" placeholder="password"></label>
+  
+        </fieldset>
+  
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male"><input type="radio" id="male" name="gender">Male</label>
+          <label for="female"><input type="radio" id="female" name="gender">Female</label>
+  
+        </fieldset>
+  
+        <fieldset>
+          <legend>Why are you here?</legend>
+          <label for="box1"><input type="checkbox" id="box1" name="box1">To develop</label>
+          <label for="box2"><input type="checkbox" id="box2" name="box2">To Work</label>
+          <label for="box3"><input type="checkbox" id="box3" name="box3">To Create project</label>
+  
+        </fieldset>
+  
+        <fieldset>
+          <legend>Work experience</legend>
+          <select name="city" id="city">
+              <option value="junior">Junior Developer</option>
+              <option value="middle">Middle Developer</option>
+              <option value="senior">Senior Developer</option>
+          </select>
+      </fieldset>
+
+      <input type="button" onclick="location.href='/page2.html'" value="Submit" />
+        </form>
+      
+      <h1>Home page</h1>
+    </main>
+  </body>
+</html>
